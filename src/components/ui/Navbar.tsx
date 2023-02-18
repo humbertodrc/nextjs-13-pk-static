@@ -1,6 +1,6 @@
 import { Spacer, Text, useTheme } from '@nextui-org/react'
 import Image from 'next/image'
-import React from 'react'
+import React, { lazy } from 'react'
 
 export const Navbar = () => {
 
@@ -13,11 +13,11 @@ export const Navbar = () => {
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'start',
-      padding: '20px 0px',
+      padding: '0 20px',
       backgroundColor: theme?.colors.gray100.value
     }}>
 
-      <Image src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" alt='Pokemon Dito' width={70} height={70} />
+      <Image src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" alt='Pokemon Dito' width={70} height={70} priority  />
 
       <Text color='white' h2>P</Text>
       <Text color='white' h3>okémon</Text>
